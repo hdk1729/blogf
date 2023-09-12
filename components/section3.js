@@ -41,7 +41,7 @@ function Post(){
              <Link  legacyBehavior href={"/"}><a className="text-3xl md:text-4xl font-bold text-gray-800 hover:text-gray-600" > This is my vlog</a></Link>
             </div>
             <p className="text-gray-500 py-3">
-            Hello how are you i am finn even the most powerfull thing i sin m yhand sunday ho ya monday rog kao danduuuuuuu
+            Hello how are you i am fine even the most powerfull thing i sin m yhand sunday ho ya monday rog kao danduuuuuuu
             </p>
               <Author></Author>
 

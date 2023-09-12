@@ -54,7 +54,13 @@ function Slide(){
   return(
     <div className="grid md:grid-cols-2 ">
       <div className="image mx-20  mr-20">
-        <Link href={"/"}><Image src={"/images/card image/img2.jpg"} alt='' width={500} height={300}/></Link>
+        <Link href={"/"}><Image
+  src={"/images/card image/img2.jpg"}
+  alt="Description of the image"
+  width={500}
+  height={300}
+/>
+</Link>
         
       </div>
     <div className="info flex justify-center ml-0 mx-0 flex-col">
@@ -67,7 +73,7 @@ function Slide(){
 
       </div>
       <p className="text-gray-500 py-3">
-        Hello how are you i am finn even the most powerfull thing i sin m yhand sunday ho ya monday rog kao danduuuuuuu
+        Hello how are you i am fine even the most powerfull thing i sin m yhand sunday ho ya monday rog kao danduuuuuuu
       </p>
       <Author></Author>
 

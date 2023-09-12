@@ -12,7 +12,7 @@ export default function Header() {
         </div>
           <div className="  sm:order-2  justify-center px-30 ">
         
-        <Link href={"/"}><Image src={"/images/logo/logoblog.jpg"} alt='' width={100} height={100}/></Link>
+        <Link href={"/"}><Image src={"/images/logo/logoblog.jpg"} alt="logo" width={100} height={100}/></Link>
         
       
         </div>
