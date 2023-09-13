@@ -12,7 +12,7 @@ export default function Section2() {
         const response = await fetch('https://myblog-bk.onrender.com/api/post/posts'); 
         const data = await response.json();
         setPosts(data.posts);
-        console.log(data.posts);
+        //console.log(data.posts);
       } catch (error) {
         console.error('Error fetching posts:', error);
       }
@@ -44,15 +44,19 @@ function Post({ post }) {
         </Link>
       </div>
       <div className='info flex justify-center flex-col py-4'>
-        <div className='cat'>
-          {post.tags.map((tag, index) => (
-           <Link href={`/search?tags=${tag}`} passHref>
-           <span className='text-orange-600 hover:text-orange-800'>{tag}</span>
-         </Link>
-         
-          ))}
-          <span className='text-gray-600 hover:text-gray-600'> - {new Date(post.createdAt).toLocaleDateString()}</span>
-        </div>
+      <div className='cat'>
+  {post.tags.map((tag, index) => (
+    <span key={index}>
+      <Link href={`/search?tags=${tag}`}>
+        <span className='text-orange-600 hover:text-orange-800'>{tag}</span>
+      </Link>
+      {index < post.tags.length - 1 && ' | '}
+    </span>
+  ))}
+  <span className='text-gray-600 hover:text-gray-600'>
+    - {new Date(post.createdAt).toLocaleDateString()}
+  </span>
+</div>
         <div className='title'>
           <Link href={`/post/${post._id}`} passHref>
             <span className='text-xl font-bold text-gray-800 hover:text-gray-600'>{post.title}</span>
